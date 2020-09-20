@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="binclock.css">
+		<!-- <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"> -->
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		
+		<title>
+			Binary Clock
+		</title>
+		<script src="binclock.js"></script>
+</head>
+
+<body id="body" onload="startTime()">
+	<h1> Binary Clock </h1>
+	<div class="container">
+		<div class="d-flex justify-content-center">
+		<div class="number">
+			<div class="num">8
+			</div>
+			<div class="num">4
+			</div>
+			<div class="num">2
+			</div>
+			<div class="num">1
+			</div>
+		</div>
+		<div class="hour">
+			<label id="hr"> Hour </label>
+			<div>
+				<span class="blank">
+				</span>
+				<span id="h8" class="real">
+				</span>
+			</div>
+			<div>
+				<span class="blank">
+				</span>
+				<span id="h4" class="real">
+				</span>
+			</div>
+			<div>
+				<span class="blank">
+				</span>
+				<span id="h2" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="hr1" class="real">
+				</span>
+				<span id="h1" class="real">
+				</span>
+			</div>
+		</div>
+		<div class="minutes">
+			<label> Minutes </label>
+			<div>
+				<span class="blank">
+				</span>
+				<span id="m8" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="mi4" class="real">
+				</span>
+				<span id="m4" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="mi2" class="real">
+				</span>
+				<span id="m2" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="mi1" class="real">
+				</span>
+				<span id="m1" class="real">
+				</span>
+			</div>
+		</div>
+		<div class="seconds">
+			<label> Seconds </label>
+			<div>
+				<span class="blank">
+				</span>
+				<span id="s8" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="se4" class="real">
+				</span>
+				<span id="s4" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="se2" class="real">
+				</span>
+				<span id="s2" class="real">
+				</span>
+			</div>
+			<div>
+				<span id="se1" class="real">
+				</span>
+				<span id="s1" class="real">
+				</span>
+			</div>
+		</div>
+		</div>
+		<div class="text-center" id="txt"></div>
+		<div class="text-center">
+			<p> Wiki on (How to read a binary clock)
+			<a href="https://www.wikihow.com/Read-a-Binary-Clock">Read here</a></p>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
