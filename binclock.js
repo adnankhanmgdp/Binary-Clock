@@ -3,17 +3,27 @@ function startTime() {
 	var h = today.getHours();
 	var m = today.getMinutes();
 	var s = today.getSeconds();
+	if(h>=12)
+	{
+		ap = "pm";
+		change(ap);
+	}
+	else
+	{
+		ap = "am";
+		change(ap);
+	}
 	h = checkhr(h);
 	m = checkTime(m);
 	s = checkTime(s);
 	change_dom_hr(h);
 	change_dom_min(m);
-	change_dom_sec(s)
+	change_dom_sec(s);
 	// document.getElementsByTagName("span").setAttribute("onchange","reset()");
 	reset();
 	// console.log()
 	document.getElementById('txt').innerHTML =
-		h + ":" + m + ":" + s;
+		h + ":" + m + ":" + s + " " + ap + ".";
 	var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
