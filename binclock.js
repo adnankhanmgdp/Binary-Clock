@@ -276,7 +276,7 @@ for(var i=0; i< a.length; i++)
 {
 	a[i].style.backgroundColor="#626262";
 	a[i].style.borderColor="#C5C5C5";
-}}, 1000);
+}}, 500);
 // console.log(a)
 }
 function change(idd)
