@@ -1,7 +1,7 @@
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();
-	h= parseInt(h);
+// 	h= parseInt(h);
 	var m = today.getMinutes();
 	var s = today.getSeconds();
 	if(h>=12)
@@ -35,7 +35,7 @@ function checkTime(i) {
 	return i;
 }
 function checkhr(i) {
-	i = i.toString();
+// 	i = i.toString();
 	if (i > 12) {
 		i = i - 12;
 		if (i < 10) {
@@ -45,10 +45,10 @@ function checkhr(i) {
 	else if (i == 0) {
 		i = 12;
 	}
-        if (i<10 && i[0] !== 0) 
-        {
-	   i = "0" + i;
-        }
+//         if (i<10 && i[0] !== 0) 
+//         {
+// 	   i = "0" + i;
+//         }
 	return i;
 }
 function change_dom_sec(s)
