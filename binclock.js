@@ -43,6 +43,10 @@ function checkhr(i) {
 	else if (i == 0) {
 		i = 12;
 	}
+        if (i < 10) 
+        {
+	   i = "0" + i;
+        }
 	return i;
 }
 function change_dom_sec(s)
