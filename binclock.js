@@ -1,6 +1,7 @@
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();
+        console.log(h);
 // 	h = h.toString();
 // 	h= parseInt(h);
 	var m = today.getMinutes();
@@ -15,6 +16,10 @@ function startTime() {
 	{
 	if (h == 0) {
 		h = 12;
+	}
+        else if(h>0 && h< 10)
+	{
+		h= "0" + h;
 	}
 		ap = "am";
 		change(ap);
