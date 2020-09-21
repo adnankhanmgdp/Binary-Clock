@@ -1,20 +1,25 @@
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();
+// 	h = h.toString();
 // 	h= parseInt(h);
 	var m = today.getMinutes();
 	var s = today.getSeconds();
 	if(h>=12)
 	{
+		h = checkhr(h);
 		ap = "pm";
 		change(ap);
 	}
 	else
 	{
+	if (h == 0) {
+		h = 12;
+	}
 		ap = "am";
 		change(ap);
 	}
-	h = checkhr(h);
+	
 	m = checkTime(m);
 	s = checkTime(s);
 	change_dom_hr(h);
@@ -41,13 +46,8 @@ function checkhr(i) {
 		if (i < 10) {
 			i = "0" + i;
 		}
-		else if (i == 0) {
-		i = 12;
 	}
-	}
-	else if (i == 0) {
-		i = 12;
-	}
+	
 //         if (i<10 && i[0] !== 0) 
 //         {
 // 	   i = "0" + i;
