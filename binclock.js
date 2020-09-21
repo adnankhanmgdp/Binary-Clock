@@ -45,7 +45,7 @@ function checkhr(i) {
 	else if (i == 0) {
 		i = 12;
 	}
-        if (i < 10) 
+        if (i<10 && i[0] !== 0) 
         {
 	   i = "0" + i;
         }
