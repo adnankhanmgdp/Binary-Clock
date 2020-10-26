@@ -298,7 +298,7 @@ function reset()
 setTimeout(() => { 
 for(var i=0; i< a.length; i++)
 {
-	a[i].style.backgroundColor="#626262";
+	a[i].style.backgroundColor="#330000";
 	a[i].style.borderColor="#C5C5C5";
 }}, 500);
 // console.log(a)
