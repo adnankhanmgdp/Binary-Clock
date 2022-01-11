@@ -1,7 +1,7 @@
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();
-        console.log(h);
+//      console.log(h);
 // 	h = h.toString();
 // 	h= parseInt(h);
 	var m = today.getMinutes();
